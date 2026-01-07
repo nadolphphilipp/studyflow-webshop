@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #2C3E50;
+    --accent-color: #3498DB;
+    --bg-color: #F9F9F9;
+    --surface-color: #FFFFFF;
+    --text-color: #333333;
+    --error-color: #E74C3C;
+    --success-color: #27AE60;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--surface-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--accent-color);
+    color: white;
+    outline: 2px solid var(--primary-color);
+}
+
+nav a[aria-current="page"] {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
+}
+
+.card {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.checkout-box {
+    border: 2px solid var(--accent-color);
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.price-tag {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    display: block;
+    margin: 1rem 0;
+}
+
+button {
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
