@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt – StudyFlow</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">Über uns</a>
+            <a href="kontakt.html" aria-current="page">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kontaktieren Sie uns</h1>
+
+        <div class="card">
+            <form onsubmit="alert('Danke! Ihre Nachricht wurde an das (simulierte) Backend gesendet.'); return false;">
+
+                <div>
+                    <label for="name">Ihr Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                </div>
+
+                <div>
+                    <label for="email">E-Mail Adresse</label>
+                    <input type="email" id="email" name="email" required placeholder="name@beispiel.at">
+                </div>
+
+                <div>
+                    <label for="message">Ihre Nachricht</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div style="margin: 1rem 0;">
+                    <input type="checkbox" id="dsgvo" required style="width:auto;">
+                    <label for="dsgvo" style="display:inline;">Ich akzeptiere die <a
+                            href="datenschutz.html">Datenschutzerklärung</a>.</label>
+                </div>
+
+                <button type="submit">Nachricht absenden</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <nav aria-label="Rechtliches">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="lizenz.html">Lizenz</a>
+            <a href="barrierefreiheit.html">Barrierefreiheit</a>
+        </nav>
+
+        <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">
+            &copy; 2026 StudyFlow GmbH. Alle Rechte vorbehalten.
+        </p>
+    </footer>
+
+</body>
+
+</html>

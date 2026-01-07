@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8">
-  <title>StudyFlow – Lernsoftware für Studierende</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow – Einfach besser studieren</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-</header>
+    <header>
+        <nav aria-label="Hauptnavigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">Über uns</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
 
-<main>
-  <h1>StudyFlow</h1>
-  <p>StudyFlow ist eine einfache Software zur Organisation von Lernen, Aufgaben und Deadlines.</p>
-  <p>Entwickelt für Studierende, die ihren Studienalltag effizient strukturieren möchten.</p>
-</main>
+    <main>
+        <section class="card">
+            <h1>StudyFlow: Dein Studium im Griff</h1>
+            <p>Organisiere Kurse, Deadlines und Lernphasen in einer einzigen App.</p>
 
-<footer>
-  <a href="impressum.html">Impressum</a> |
-  <a href="datenschutz.html">Datenschutz</a> |
-  <a href="barrierefreiheit.html">Barrierefreiheit</a>
-</footer>
+            <figure>
+                <img src="https://placehold.co/800x400/2C3E50/FFFFFF?text=StudyFlow+App+Screenshot"
+                    alt="Screenshot der StudyFlow Benutzeroberfläche auf einem Tablet"
+                    style="width: 100%; height: auto; border-radius: 4px;">
+                <figcaption>Die intuitive Wochenansicht von StudyFlow</figcaption>
+            </figure>
+        </section>
+
+        <section class="card">
+            <h2>So funktioniert's</h2>
+            <video controls style="width: 100%; border-radius: 4px;"
+                poster="https://placehold.co/800x450?text=Video+Thumbnail">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                    type="video/mp4">
+                Ihr Browser unterstützt das Video-Tag nicht.
+            </video>
+            <p><small>Video-Demonstration der Software (Beispiel)</small></p>
+        </section>
+
+        <section class="card">
+            <h2>Fokus-Modus testen</h2>
+            <p>Unsere App enthält integrierte White-Noise Sounds für bessere Konzentration.</p>
+            <audio controls style="width: 100%;">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Ihr Browser unterstützt das Audio-Element nicht.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Rechtliches">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="lizenz.html">Lizenz</a>
+            <a href="barrierefreiheit.html">Barrierefreiheit</a>
+        </nav>
+
+        <p style="font-size: 0.9rem; margin: 0; opacity: 0.8;">
+            &copy; 2026 StudyFlow GmbH. Alle Rechte vorbehalten.
+        </p>
+    </footer>
 
 </body>
+
 </html>
